@@ -147,7 +147,7 @@
   <!-- header block 2  -->
   <div>
     <h2 class="text-5xl font-bold p-[20px] gap-10 px-[166px]">Lets Check Our<br> Service</h2>
-    <div class="flex flex-row items-center justify-start gap-7 px-[166px] py-[15px]">
+    <div class="flex flex-col md:flex-row items-center justify-start gap-7 px-[166px] py-[15px]">
       <div class="w-[285px] h-[296px]">
         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -231,35 +231,33 @@
   </div>
 
   <!-- block3 -->
-  <div class="flex bg- gray-100 px-[30px]">
-    <!-- content block3 -->
-    <div>
-      <img src="./meeting.png" alt="meeting picture" width="512px" height="569px">
-      <!-- text block3 -->
+  <div class="flex flex-col-reverse md:flex-row justify-center gap-5 bg-gray-100 px-6 md:px-[30px] py-10 items-center">
+    <!-- รูปภาพ -->
+    <div class="md:pl-24 ">
+        <img src="./meeting.png" alt="meeting picture" class="md:w-[512px] h-auto mx-auto md:mx-0 translate-x-[-13px]">
     </div>
 
-    <!-- Daily Order -->
-    <div>
-      <div class="flex flex-col items-start justify-center min-h-screen gap-7 px-[100px]">
-        <h2 class="text-6xl font-bold">We Take The Work <br>Of Your Hand</h2>
-        <p>
-          It's crafted with the latest trend of design & coded with all modern approaches. It's a robust &
-          multi-dimensional usable.
-          <br>
-          Nostrum placeat hic, praesent atque ornare minim.
-          nihil suscipit aliquet excepteur bibendum cumque facilis senectus habitant aliquid cupidatat! Fugit? Nisl
-          dignissimos ratione
+    <!-- text block3 -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl gap-3 px-4 md:pr-40">
+        <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+            We Take The Work <br class="hidden md:block"> Off Your Hands
+        </h2>
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            It's crafted with the latest trend of design & coded with all modern approaches. It's a robust &
+            multi-dimensional usable.<br>
+            Nostrum placeat hic, praesent atque ornare minim.
+            nihil suscipit aliquet excepteur bibendum cumque facilis senectus habitant aliquid cupidatat! Fugit? Nisl
+            dignissimos ratione
         </p>
-        <!-- discover More  -->
+        <!-- button -->
         <div
-          class="flex items-center justify-center w-40 h-12 bg-blue-500 text-white text-lg font-semibold rounded-md 
+            class="flex items-center justify-center w-40 h-12 bg-blue-500 text-white text-lg font-semibold rounded-md 
             cursor-pointer transition-all duration-300 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500">
-          Discover More
+            Discover More
         </div>
-      </div>
     </div>
-  </div>
-  </div>
+</div>
+
 
   <!-- pricing plan -->
   <section class="mt-12 md:mx-[165px] md:mt-[135px] mb-[78px] flex flex-col items-center justify-center">
