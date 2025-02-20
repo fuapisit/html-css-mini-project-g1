@@ -19,8 +19,130 @@
 </head>
 
 <body class="h-screen w-screen font-['Rubik']">
-  <!-- nav bar + hero -->
-
+<!-- nav bar -->
+<div>
+  <div class="relative">
+    <nav class="md:mx-0 md:px-20 md:p-[14px] md:border-none sticky top-0 z-10 bg-[#F4F7FC] p-[6px] w-full border-b border-gray-200">
+      <div class="w-full flex justify-between items-center px-4">
+        <div class="relative">
+          <img class="w-[60%] md:w-[100%]" src="./images/logo.png" alt="logo">
+        </div>
+        
+        <!-- checkbox -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer"/>
+        <label for="menu-toggle" class="md:hidden text-[#1A1A2C] hover:text-[#1374F6] cursor-pointer">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-width="2" d="M4 4h20 M4 12h20 M4 20h20"></path>
+          </svg>
+        </label>
+  
+        <!-- mobile navbar -->
+        <ul class="hidden peer-checked:flex w-full flex-col items-center absolute bg-white top-13 left-0 transition-all ease-in-out duration-300 rounded-lg shadow-lg z-10">
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Home</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Category</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Service</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Blog</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Contact</a></li>
+          <li class="w-full">
+            <button class="bg-[#FDD76E] hover:bg-[#FCCA3F] text-[#1A1A2C] font-bold p-4 cursor-pointer w-full rounded-b-lg" aria-label="Create Account">
+              Create Account
+            </button>
+          </li>
+        </ul>
+  
+        <!-- desktop navbar -->
+        <ul class="hidden md:flex items-center text-[16px] font-semibold md:gap-[50px] gap-[16px]">
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Home</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Category</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Service</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Blog</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Contact</a></li>
+          <li>
+            <button class="bg-[#FDD76E] hover:bg-[#FCCA3F] text-[#1A1A2C] w-[160px] h-[60px] rounded-md cursor-pointer" aria-label="Create Account">
+              Create Account
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- hero section -->
+  <div class="md:flex md:px-[100px] px-6 py-12 md:flex-row md:justify-between z-9">
+      <!-- left box -->
+      <div class="md:mt-[50px]">
+        <h3 class="text-[20px] text-[#1374F6] flex items-center gap-2">
+          CREATIVE AGENCY
+          <svg class="w-12 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 40 24">
+            <path stroke-linecap="round" d="M0 20h40"></path>
+          </svg>
+        </h3>    
+        <h1 class="font-bold md:text-[48px] text-[36px] text-[#0B0757] mt-2">We are here to give <br> the best service</h1>
+        <p class="text-[18px] text-gray-500 mt-4 md:w-[555px]">
+          It's crafted with the latest trend of design & coded with all modern approaches.
+          It's a robust & multi-dimensional usable template.
+        </p>
+        <div class="mt-6 flex justify-start gap-4">
+          <button class="bg-[#1374F6] hover:bg-[#4A9BFF] text-white w-[160px] h-[60px] rounded-lg font-semibold cursor-pointer">Get Started</button>
+          <button class="flex items-center text-gray-700 hover:text-gray-400 cursor-pointer">
+            <span class="ml-[15px] mr-2"><img src="./images/icon-play.png" alt="watch-video-button"></span> 
+            <p>Watch Video</p>
+          </button>
+        </div>
+      </div>
+  
+      <!-- right box -->
+      <div class="mt-20 md:mt-0 relative flex justify-center ">
+        <div>
+          <div class="flex md:justify-end md:items-center w-full">
+            <div class="flex bg-[#1374F6] md:w-[445px] md:h-[614px] w-[262px] h-[361px] rounded-tr-[60px] rounded-br-[10px]" style="clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 90%);">
+              <img class="object-cover" src="./images/model-hero.png" alt="model">
+            </div>
+          </div>
+  
+          <!-- users card -->
+          <div class="absolute md:bottom-4 md:-left-[100px] bottom-0 left-0 bg-white shadow-lg rounded-xl p-4 md:w-[180px] md:h-[280px] w-[100px] h-[165px] md:gap-3 gap-0 flex flex-col">
+            <h4 class="font-semibold text-gray-800 relative md:text-[14px] text-[10px] m-0 p-0">Users</h4>
+              <img class="absolute md:bottom-[240px] md:left-[140px] bottom-[135px] left-20 md:w-[65px] md:h-[65px] w-[47px] h-[47px]" src="./images/icon-chat.png" alt="chat icon">
+            <div>
+              <div class="flex items-center ">
+                <img src="./images/profile-michel.png" class="md:w-[38px] w-[22px] rounded-full mr-2" alt="Michel">
+                <span class="font-semibold text-gray-700 md:text-[14px] text-[10px]">Michel
+                  <span class="font-normal md:text-[10px] text-[8px]"><br>Simplify</span></span>
+              </div>
+              <div class="flex items-center md:mt-3">
+                <img src="./images/profile-clark.png" class="md:w-[38px] w-[22px] rounded-full mr-2" alt="Clark">
+                <span class="font-semibold text-gray-700 md:text-[14px] text-[10px]">Clark
+                  <span class="font-normal md:text-[10px] text-[8px]"><br>Simplify</span></span>
+              </div>
+              <div class="flex items-center md:mt-3.5">
+                <img src="./images/profile-gereds.png" class="md:w-[38px] w-[22px] rounded-full mr-2" alt="Gereds">
+                <span class="font-semibold text-gray-700 md:text-[14px] text-[10px]">Gereds
+                  <span class="font-normal md:text-[10px] text-[8px]"><br>Simplify</span></span>
+              </div>
+            </div>
+            <div class="flex justify-center mt-3">
+              <button class="bg-[#00B894] hover:bg-[#00D4A6] text-white rounded-lg md:w-[125px] md:h-[36px] w-[73px] h-[21px] cursor-pointer" aria-label="Message">
+                <p class="md:text-[14px] text-[10px]">Message</p>
+              </button>
+            </div>
+          </div>
+          
+  
+          <!-- realtime card -->
+          <div class="absolute md:top-10 md:-right-20 top-8 right-0 bg-white shadow-lg rounded-xl p-4 md:h-[204px] md:w-[149px] h-[120px] w-[87px]">
+            <h4 class="text-gray-500 md:text-[14px] text-[10px]">Realtime Users</h4>
+            <h2 class="md:text-[32px] text-[12px] font-bold text-gray-900">553</h2>
+            <p class="md:text-[14px] text-[10px] text-[#00B894] relative">+21.01% 
+              <span class="absolute md:top-2 md:right-9 -right-0"><img src="./images/icon-arrowhead-higher.png" alt="growth"></span>
+            </p>
+            <img class="flex w-full object-cover" src="./images/graph-hero.png" alt="graph">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 80%);" class="absolute top-0 w-full bg-[#F4F7FC] z-[-1] md:h-[956px] h-[737px]"></div>
+  </div>
+  </div>
   <!-- services -->
   <!-- devFuu -->
   <!-- header block 2  -->
@@ -562,11 +684,6 @@
         </div>
       </div>
     </nav>
-
-
-
-
-
     <!-- end Nav menu  -->
   </div>
   </div>
