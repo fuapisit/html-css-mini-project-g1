@@ -14,7 +14,47 @@
 
 <body class="h-screen w-screen font-['Rubik']">
     <!-- nav bar + hero -->
-
+    <nav class="md:mx-[100px] mx-[10px] my-[14px] bg-none ">
+      <div class="w-full flex justify-between items-center px-4">
+        <div class="relative">
+          <img class="w-[80%] md:w-[100%]" src="./images/logo.png" alt="logo">
+        </div>
+        <!--Checkbox-->
+        <input type="checkbox" id="menu-toggle" class="hidden peer"/>
+        <label for="menu-toggle" class="md:hidden text-[#1A1A2C] hover:text-[#1374F6] cursor-pointer">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-width="2" d="M4 4h20 M4 12h20 M4 20h20"></path>
+          </svg>
+        </label>
+        <!--Mobile Navbar-->
+        <ul class="hidden peer-checked:flex w-full flex-col items-center absolute bg-white  top-24 left-0 transition-all ease-in-out duration-300 rounded-lg shadow-lg z-10">
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Home</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Category</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Service</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Blog</a></li>
+          <li><a href="#" class="flex justify-center text-[#1A1A2C] hover:text-[#1374F6] hover:underline p-4">Contact</a></li>
+          <li class="w-full">
+              <button class="bg-[#FDD76E] hover:bg-[#FCCA3F] text-[#1A1A2C] font-bold p-4 cursor-pointer w-full rounded-b-lg">
+                Create Account
+              </button>
+            </li>
+        </ul>
+        <!--Desktop Navbar-->
+        <ul class="hidden md:flex items-center text-[16px] font-semibold md:gap-[50px] gap-[16px]">
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Home</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Category</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Service</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Blog</a></li>
+          <li><a href="#" class="text-[#1A1A2C] hover:text-[#1374F6] hover:underline">Contact</a></li>
+          <li>
+              <button class="bg-[#FDD76E] hover:bg-[#FCCA3F] text-[#1A1A2C] w-[160px] h-[60px] rounded-md cursor-pointer">
+              Create Account
+              </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="md:hidden border-b border-gray-200 w-full z-0"></div>
     <!-- services -->
 
     <!-- pricing plan -->
