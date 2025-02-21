@@ -20,11 +20,13 @@
 <body class="h-screen w-screen font-['Rubik']">
 <!-- nav bar -->
 <div>
-  <div class="relative">
-    <nav class="md:mx-0 md:px-20 md:p-[14px] md:border-none sticky top-0 z-10 bg-[#F4F7FC] p-[6px] w-full border-b border-gray-200">
+  <div class="relative mt-5 md:mt-20">
+    <nav class="md:mx-0 md:px-[140px] md:py-[14px] md:border-none fixed top-0 z-99 bg-[#F4F7FC] p-[6px] w-full border-b border-gray-200">
       <div class="w-full flex justify-between items-center px-4">
         <div class="relative">
+          <a href="#" class="scroll-smooth">
           <img class="w-[60%] md:w-[100%]" src="./images/logo.png" alt="logo">
+          </a>
         </div>
         
         <!-- checkbox -->
@@ -66,13 +68,13 @@
     </nav>
   
     <!-- hero section -->
-  <div class="md:flex md:px-[100px] px-6 py-12 md:flex-row md:justify-between z-9">
+  <div class="md:flex md:flex-row md:px-[166px] pl-7 pr-2 py-12 md:justify-between z-9">
       <!-- left box -->
       <div class="md:mt-[50px]">
         <h3 class="text-[20px] text-[#1374F6] flex items-center gap-2">
           CREATIVE AGENCY
-          <svg class="w-12 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 40 24">
-            <path stroke-linecap="round" d="M0 20h40"></path>
+          <svg class="w-12 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 30 24 md:0 0 40 24">
+            <path stroke-linecap="round" d="M0 20h20 md:h40"></path>
           </svg>
         </h3>    
         <h1 class="font-bold md:text-[48px] text-[36px] text-[#0B0757] mt-2">We are here to give <br> the best service</h1>
@@ -81,9 +83,14 @@
           It's a robust & multi-dimensional usable template.
         </p>
         <div class="mt-6 flex justify-start gap-4">
-          <button class="bg-[#1374F6] hover:bg-[#4A9BFF] text-white w-[160px] h-[60px] rounded-lg font-semibold cursor-pointer">Get Started</button>
-          <button class="flex items-center text-gray-700 hover:text-gray-400 cursor-pointer">
-            <span class="ml-[15px] mr-2"><img src="./images/icon-play.png" alt="watch-video-button"></span> 
+          <button class="bg-[#1374F6] hover:bg-[#4A9BFF] text-white w-[160px] h-[60px] rounded-lg font-semibold cursor-pointer transition-all duration-300 hover:bg-white hover:text-[#4A9BFF] hover:border-2 hover:border-[#4A9BFF]">Get Started</button>
+          <button class="flex items-center  text-gray-700 hover:text-gray-400 cursor-pointer group">
+            <span>
+              <img class="md:ml-[15px] md:mr-2 mr-2 group-hover:hidden" src="./images/icon-play.png" alt="watch-video-button">
+            </span>
+            <span>
+              <img class="md:ml-[15px] md:mr-2 mr-2 hidden group-hover:block" src="./images/icon-play-hover.png" alt="watch-video-button">
+            </span>
             <p>Watch Video</p>
           </button>
         </div>
@@ -139,13 +146,13 @@
         </div>
       </div>
     </div>
-    <div style="clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 80%);" class="absolute top-0 w-full bg-[#F4F7FC] z-[-1] md:h-[956px] h-[737px]"></div>
+    <div style="clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 80%);" class="absolute top-0 w-full bg-[#F4F7FC] z-[-1] md:h-[800px] h-[737px]"></div>
   </div>
   </div>
   <!-- services -->
   <!-- devFuu -->
   <!-- header block 2  -->
-  <div>
+  <div class="md:mt-20">
     <h2 class="text-5xl font-bold p-[20px] gap-10 px-[166px]">Lets Check Our<br> Service</h2>
     <div class="flex flex-col md:flex-row items-center justify-start gap-7 px-[166px] py-[15px]">
       <div class="w-[285px] h-[296px]">
